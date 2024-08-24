@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <title>CodeCracker</title>
     <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="Logo da Alura">
+    <header class="container">
+        <img class="logo" src="assets/images/logo.png" alt="Logo da Alura">
+
+        <h1 class="titulo">CODECRACKER - Transforme texto em código e código em texto com facilidade.</h1>
     </header>
 
-    <main>
-        <section>
-            <textarea class="texto-area" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+    <main class="container">
+
+        <section class="entrada-texto">
+
+            <textarea class="texto-area" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
 
             <div class="informacao">
-                <h6>Apenas letras minúsculas e sem acento.</h6>
+                <p>Apenas letras minúsculas e sem acento.</p>
             </div>
 
             <div class="botoes">
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+                <button class="btn-encriptar botao">Criptografar</button>
+
+                <button class="btn-desencriptar botao">Descriptografar</button>
             </div>
+
         </section>
 
-        <section>
-            <textarea class="mensagem" cols="28" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
+        <section class="saida-texto">
+            <textarea class="mensagem" placeholder="Nenhuma mensagem encontrada"></textarea>
+</span>
+            <button class="btn-copiar botao">Copiar</button>
         </section>
     </main>
+
+    <footer class="container">
+        <p>Desenvolvido por <a href="https://github.com/"><span>Edivan Cardoso</span></a> durante o curso da Alura</p>
+    </footer>
 
     <script src="assets/js/script.js"></script>
     
