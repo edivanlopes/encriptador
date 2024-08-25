@@ -38,7 +38,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-top: 70px;
 }
@@ -56,6 +56,7 @@ main {
     justify-content: space-between;
     gap: 0;
     padding-bottom: 25px;
+    flex: 2;
 }
 
 textarea {
@@ -65,12 +66,13 @@ textarea {
     padding: 20px;
     border: none;
     color: var(--cor-secundaria);
-    border-radius: 32px;
+    border-radius: 20px;
 }
 
 .texto-area {
     background-color: var(--cor-primaria);
     border-radius: 20px;
+    height: 55vh;
 }
 
 .texto-area:focus {
@@ -108,6 +110,10 @@ textarea {
     transition: all .3s ease-in-out;
 }
 
+.btn-encriptar {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+}
 .informacao {
     font-size: 12px;
     margin: 20px 0;
@@ -129,8 +135,8 @@ textarea {
     background-image: url(../images/imgfundo.png);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 21vw;
-    height: 70vh;
+    background-size: contain;
+    height: 72vh;
 }
 
 .mensagem:focus {
@@ -139,12 +145,12 @@ textarea {
 
 .saida-texto {
     position: relative;
+    flex: 1;
 }
 
 .btn-copiar {
     position: absolute;
-    position: absolute;
-    right: 38px;
+    right: 28px;
     bottom: 25px;
     width: 80%;
 }
@@ -156,4 +162,178 @@ footer {
 footer a {
     text-decoration: none;
     font-weight: 800;
+}
+
+@media (max-width: 600px) {
+
+    .subtitulo {
+        display: none;
+    }
+
+    .container {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-size: 7vw;
+        line-height: 30px;
+    }
+
+    header {
+        padding-top: 2vh;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-bottom: 30px;
+        gap: 30px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .entrada-texto {
+        margin-left: 0;
+        flex: 1;
+        width: 100%;
+    }
+
+    textarea {
+        padding: 10px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 24px;
+    }
+
+    .btn-copiar {
+        right: 10%;
+    }
+
+    .texto-area {
+        height: 40vh;
+        max-width: 100%;
+    }
+
+    .saida-texto {
+        height: 40vh;
+    }
+
+    .informacao {
+        margin: 20px 0 10px;
+    }
+
+    .mensagem {
+        background-image: none;
+        height: 30vh;
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .container {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    header {
+        padding-top: 5vh;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        gap: 20px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .entrada-texto {
+        margin-left: 0;
+        flex: 1;
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .saida-texto {
+        width: 100%;
+    }
+
+    .mensagem {
+        background-image: none;
+        height: 30vh;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+
+    .container {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    header {
+        padding-top: 5vh;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .titulo {
+        font-size: 26px;
+        gap: 20px;
+        line-height: 40px;
+    }
+
+    main {
+        gap: 1vw;
+    }
+
+    .entrada-texto {
+        margin: 0 2vw;
+        gap: 0;
+        padding-bottom: 25px;
+        flex: 2;
+        width: 100%;
+    }
+
+    .saida-texto {
+        width: 100%;
+    }
+
+    .mensagem {
+        width: 100%;
+    }
+
+    .btn-copiar {
+        right: 26px;
+        bottom: 25px;
+        width: 80%;
+    }
+
+
 }
