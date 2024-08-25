@@ -114,6 +114,7 @@ textarea {
     background-color: var(--cor-secundaria);
     color: var(--branco);
 }
+
 .informacao {
     font-size: 12px;
     margin: 20px 0;
@@ -137,6 +138,7 @@ textarea {
     background-position: center center;
     background-size: contain;
     height: 72vh;
+    padding-bottom: 100px;
 }
 
 .mensagem:focus {
@@ -150,13 +152,14 @@ textarea {
 
 .btn-copiar {
     position: absolute;
-    right: 28px;
+    right: 10%;
     bottom: 25px;
     width: 80%;
 }
 
 footer {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 footer a {
@@ -231,6 +234,7 @@ footer a {
         background-image: none;
         height: 30vh;
         width: 100%;
+        padding-bottom: 90px;
     }
 
     footer {
@@ -334,6 +338,4 @@ footer a {
         bottom: 25px;
         width: 80%;
     }
-
-
 }

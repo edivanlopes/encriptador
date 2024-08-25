@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCracker</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon_io/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="container">
@@ -24,25 +25,25 @@
             </div>
 
             <div class="botoes">
-                <button class="btn-encriptar botao">Criptografar</button>
+                <button id="ocultar" class="btn-encriptar botao" onclick="btnEncriptar()">Criptografar</button>
 
-                <button class="btn-desencriptar botao">Descriptografar</button>
+                <button class="btn-desencriptar botao" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
 
         </section>
 
         <section class="saida-texto">
-            <textarea class="mensagem" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <textarea id="remover-img" class="mensagem" placeholder="Nenhuma mensagem encontrada"></textarea>
 </span>
-            <button class="btn-copiar botao">Copiar</button>
+            <button class="btn-copiar botao" onclick="copiarTexto()">Copiar</button>
         </section>
     </main>
 
     <footer class="container">
-        <p>Desenvolvido por <a href="https://github.com/"><span>Edivan Cardoso</span></a> durante o curso da Alura</p>
+        <p>Desenvolvido por <a href="https://github.com/" target="_blank"><span>Edivan Cardoso</span></a> <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">durante ONE - Oracle Next Education</a></p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
     
 </body>
 </html>
