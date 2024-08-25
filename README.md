@@ -2,6 +2,10 @@
 
 **ALPHACODE** é uma aplicação web simples e eficaz que permite transformar texto em código e código em texto com facilidade. É uma aplicação bem simples mas muito divertida que pode ser utilizada, por exemplo, para trocar mensagem entre amigos.
 
+## Acesse o Projeto
+
+Você pode acessar a versão publicada do projeto clicando [aqui](https://encriptador-eta-livid.vercel.app/).
+
 ![Captura de tela do site ALPHACODE](assets/images/screenshot.png)
 
 
